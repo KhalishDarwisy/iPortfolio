@@ -1,7 +1,7 @@
 <?php
 <?php
 // Only process POST requests
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+<!--if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get the form fields and remove whitespace
     $name = strip_tags(trim($_POST["name"]));
     $name = str_replace(array("\r","\n"),array(" "," "),$name);
@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Not a POST request, set a 403 (forbidden) response code
     http_response_code(403);
     echo "There was a problem with your submission, please try again.";
-}
+}-->
 ?>
 
 
